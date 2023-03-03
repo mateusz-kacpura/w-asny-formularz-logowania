@@ -1,0 +1,142 @@
+:root {
+    --margin: rgb(214, 162, 18);
+    --background: rgb(138, 230, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    min-height: 200vh;
+}
+
+.content-button-page {
+    position: flex;
+    display: block;
+}
+
+.button-page {
+    height: 30px;
+    width: 200px;
+    background-color: rgb(255, 0, 0);
+    color: black;
+    left: 10%;
+    top: 10%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 23px;
+    font-weight: 400;
+    font-variant: small-caps;
+    box-shadow: black 0px 3px 10px;
+}
+
+.content-main {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* konieczne aby działał blur na body */
+    top: 0; /* konieczne aby działał blur na body */
+    backdrop-filter: blur(0px); /* konieczne aby działał blur na body */
+    display: flex; /* centruje element content-login na środku */
+}
+
+.title {
+    border: black;
+    font-size: 25px;
+    font-weight: 900;
+    font-variant: small-caps;
+    margin-right: 10%;
+}
+
+.content-login {
+    border: 1px solid;
+    width: 500px;
+    background-color: rgb(255, 206, 176);
+    min-height: 250px;
+    margin-top: 1%; /* daje odstępy od krawędzi ekranu */
+    margin-bottom: 1%; /* daje odstępy od krawędzi ekranu */
+    padding: 3%; /* daje odstępy od krawędzi dla form */
+    border-radius: 20px;
+    box-shadow: black 0px 5px 15px;
+    position: relative; /* konieczne aby 'x' dzialal position absolute*/
+}
+
+.p-title {
+    border: rgb(55, 55, 55);
+    font-size: 25px;
+    font-weight: 900;
+    font-variant: small-caps;
+    margin-bottom: 1%;
+    text-shadow: black 1px -5px 15px;
+}
+
+.label-login-text {
+    border: black;
+    color: rgb(77, 77, 77);
+    font-size: 20px;
+    font-weight: 300;
+    font-variant: small-caps;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-bottom: 10px;
+}
+
+.form-login {
+    padding: 3%;
+    display: grid; /* wyrównuje tekst i form */
+}
+
+.input-login {
+    background-color: cornsilk;
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+}
+
+.input-login:hover {
+    background-color:rgb(255, 235, 201);
+    transition: 1s;
+}
+
+
+.button-login {
+    margin-top: 25px;
+    padding: 3px;
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: cornsilk;
+}
+
+.button-login:hover {
+    background-color:rgb(166, 255, 118);
+    transition: 1s;
+}
+
+.x {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.x:hover {
+    color:rgb(255, 0, 0);
+    transition: 1s;
+}
+
+.button-page:hover {
+    background-color: rgb(84, 0, 0);
+    transition: 0s;
+}

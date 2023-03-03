@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content login</title>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <link rel="stylesheet" href="style.css"></link>
+    <script defer src="delete.js"></script>
+    <script defer src="create.js"></script>
+</head>
+<body>
+    <div class="content-main">
+        <div class="content-button-page">
+        <button class="button-page" id="button_page_one">Logowanie</button>
+        <button class="button-page" id="button_page_two">Rejestracja</button>        
+        </div>
+        <div><p class="title">Panel administratora</h1></p></div>
+        <div class="content-login">
+            <p class="p-title">Zaloguj się</p>
+            <form class="form-login" action="login.php" method="post" >
+                <label class="label-login-text" >Login:</label>
+                <input class="input-login" type="text" name="login"></input>
+                <label class="label-login-text" >Hasło:</label>
+                <input class="input-login" type="text" name="password"></input>
+                <button class="button-login"><i data-feather="log-in"></i></button>
+            </form>
+            <i class="x" data-feather="x"></i>
+        </div>
+    </div>
+    <script>feather.replace()</script> 
+</body>
+</html>
