@@ -1,7 +1,7 @@
 const actionButtonX = document.querySelector('.x');
 
 function remove_content_login() {
-    const content_login = document.querySelector('.content-login');
+    const content_login = document.querySelector('.content-form');
     content_login.remove();
 }
 

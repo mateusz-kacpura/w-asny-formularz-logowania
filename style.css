@@ -15,8 +15,8 @@ body {
 }
 
 .content-button-page {
-    position: flex;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .button-page {
@@ -26,8 +26,8 @@ body {
     color: black;
     left: 10%;
     top: 10%;
-    margin-left: 1%;
-    margin-top: 1%;
+    margin-left: 3%;
+    margin-top: 3%;
     margin-bottom: 10px;
     border: none;
     border-radius: 20px;
@@ -46,6 +46,8 @@ body {
     top: 0; /* konieczne aby działał blur na body */
     backdrop-filter: blur(0px); /* konieczne aby działał blur na body */
     display: flex; /* centruje element content-login na środku */
+    flex-direction: line;
+    flex-wrap: wrap;
 }
 
 .title {
@@ -53,10 +55,16 @@ body {
     font-size: 25px;
     font-weight: 900;
     font-variant: small-caps;
-    margin-right: 10%;
 }
 
-.content-login {
+.div-title {
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.content-form {
     border: 1px solid;
     width: 500px;
     background-color: rgb(255, 206, 176);
@@ -70,11 +78,14 @@ body {
 }
 
 .p-title {
+    position:relative;
+    display: flex;
+    flex-direction: row;
     border: rgb(55, 55, 55);
     font-size: 25px;
     font-weight: 900;
     font-variant: small-caps;
-    margin-bottom: 1%;
+    margin-bottom: 10%;
     text-shadow: black 1px -5px 15px;
 }
 
@@ -127,12 +138,14 @@ body {
     color: rgb(0, 0, 0);
     top: 0;
     right: 0;
+    font-size: 30px;
     margin-right: 10px;
     margin-top: 10px;
 }
 
 .x:hover {
     color:rgb(255, 0, 0);
+    font-size: 50px;
     transition: 1s;
 }
 
